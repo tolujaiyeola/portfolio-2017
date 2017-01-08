@@ -1,0 +1,14 @@
+https://greensock.com/learning/ - some interesting looking animating in html e.g http://codepen.io/GreenSock/pen/gFHza
+
+https://fonts.google.com/ - fonts
+
+http://www.streamlineicons.com/ - 5,000 free icons for apps
+
+http://mynameismatthieu.com/WOW/docs.html - Reveal Animations When You Scroll. Very Animate.css Friend :-)
+Easily customize animation settings: style, delay, length, offset, iterations...
+
+
+https://daneden.github.io/animate.css/ - animate.css
+
+
+http://codepen.io/junrillg/pen/lehHG 0- contact form 

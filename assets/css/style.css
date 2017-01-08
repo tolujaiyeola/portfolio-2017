@@ -1,0 +1,23 @@
+.logo {
+
+   font-family: 'Sigmar One', cursive;
+}
+
+.profile-image{
+  border-radius: 50%;
+   box-shadow: -10px 10px 5px #888888;
+   border: 5px solid white;
+}
+
+
+html, body {
+  /*font-family: "PT Sans", sans-serif;*/
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+#demo{
+    background: url(assets/images/robot-fly.jpg) no - repeat center center;
+    height: 200px;
+    width: 200px;
+}
