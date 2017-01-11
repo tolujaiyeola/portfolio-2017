@@ -19,3 +19,25 @@ $.each( lang, function( language, pourcent) {
   multiply++;
 
 });
+
+
+$("#home").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#homeDiv").offset().top
+    }, 2000);
+});
+$("#skills").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#skillsDiv").offset().top
+    }, 2000);
+});
+$("#work").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#workDiv").offset().top
+    }, 2000);
+});
+$("#contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contactDiv").offset().top
+    }, 2000);
+});

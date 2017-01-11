@@ -1,2 +1,41 @@
 .testing {
   width: 71.42857%; }
+
+  img.header-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+  }
+
+  .bio-message{
+    text-align: center;
+  }
+
+.img-circle{
+  border-radius: 50%;
+}
+
+
+.social-media {
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+
+
+/*@media (min-width: @screen-lg-min) {
+
+  .nav li:hover{
+    color: white;
+    background: #53a7ea;
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+  }
+
+ }*/
