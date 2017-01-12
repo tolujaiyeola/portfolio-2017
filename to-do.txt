@@ -11,4 +11,10 @@ Easily customize animation settings: style, delay, length, offset, iterations...
 https://daneden.github.io/animate.css/ - animate.css
 
 
-http://codepen.io/junrillg/pen/lehHG 0- contact form 
+http://codepen.io/junrillg/pen/lehHG 0- contact form
+
+https://miketricking.github.io/dist/ - image over effects
+
+http://imagehover.io/- CSS Image Hover Effect Library
+
+http://bootsnipp.com/ - bootstrap examples

@@ -12,11 +12,11 @@
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
     <title>Tolu Jaiyeola | Web Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/tolu-photo.jpg">
 
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS from bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -26,12 +26,14 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/skills.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/imagehover.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
 
 
     <link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css' rel='stylesheet' type='text/css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 
@@ -62,9 +64,9 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li id="home"><a href="#">Home</a></li>
-                    <li id="skills"><a href="#about">Skills</a></li>
-                    <li id="work"><a href="#about">Work</a></li>
+                    <li id="home"><a href="#home">Home</a></li>
+                    <li id="skills"><a href="#skills">Skills</a></li>
+                    <li id="work"><a href="#work">Work</a></li>
                     <li id="contact"><a href="#contact">Contact</a></li>
                     <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -170,17 +172,79 @@
 
         <div id="workDiv" class="jumbotron">
 
+            <div class="container">
+                <div class="row">
+                    <ul class="thumbnails no-bullet">
+                        <li class="col-md-4">
+                            <div class="thumbnail">
+                                <figure class="imghvr-fold-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/example-custom.jpg" alt="example-image">
+                                    <figcaption>
+                                        <h3>Hello World</h3>
+                                        <p>Life is too important to be taken seriously!</p>
+                                    </figcaption>
+                                    <a href="javascript:;"></a>
+                                </figure>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="thumbnail">
+                                <figure class="imghvr-fold-down"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/example-custom.jpg" alt="example-image">
+                                    <figcaption>
+                                        <h3>Hello World</h3>
+                                        <p>Life is too important to be taken seriously!</p>
+                                    </figcaption>
+                                    <a href="javascript:;"></a>
+                                </figure>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="thumbnail">
+                                <figure class="imghvr-fold-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/example-custom.jpg" alt="example-image">
+                                    <figcaption>
+                                        <h3>Hello World</h3>
+                                        <p>Life is too important to be taken seriously!</p>
+                                    </figcaption>
+                                    <a href="javascript:;"></a>
+                                </figure>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
+
+
+
+
+
+        <div class="jumbotron">
+            <!-- <figure class="imghvr-stack-up">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/example-custom.jpg" alt="example-image">
+            <figcaption>
+              <h3 class="ih-fade-down ih-delay-sm ">Oscar Wilde</h3>
+              <p class="ih-zoom-in ih-delay-md">
+                <i>"I have the simplest tastes, I am always satisfied with the best."</i>
+              </p>
+              <a class="ih-fade-up ih-delay-lg button" href="#">Read More</a>
+            </figcaption>
+            <a href="#"></a>
+          </figure> -->
+
+
+        </div>
+
+
+
         <div id="contactDiv" class="jumbotron">
 
 
-            <form class="form-horizontal" data-toggle="validator">
+            <form class="form-horizontal">
 
                 <div class="form-group">
                     <label for="name" class="col-sm-3 control-label"> <span class="glyphicon glyphicon-user"></span></label>
                     <div class="col-sm-5">
                         <input type="text" class="form-control" id="name" placeholder="Lisa Doe" required/>
-                        <div class="help-block with-errors"> name please</div>
                     </div>
                     <!-- col -->
                 </div>
@@ -189,8 +253,7 @@
                 <div class="form-group">
                     <label for="email" class="control-label col-sm-3"><span class="glyphicon glyphicon-envelope"></label>
                     <div class="col-sm-5">
-                        <input type="email" id="email" class="form-control" required/>
-                        <div class="help-block with-errors"></div>
+                        <input type="email" id="email" class="form-control" placeholder="lisa.doe@gmail.com"required/>
                     </div>
                 </div>
 
@@ -199,24 +262,22 @@
                     <label for="phone" class="col-sm-3 control-label"> <span class="glyphicon glyphicon-phone"></span></label>
                     <div class="col-sm-5 phoneArea">
                         <input type="tel" id="phone1" class="form-control" placeholder="Тelephone" />
-                        <div class="help-block with-errors"></div>
                     </div>
-                    <!-- col -->
+
                 </div>
 
 
                 <div class="form-group">
                     <label for="message" class="col-sm-3 control-label"><span class="glyphicon glyphicon-comment"></span></label>
                     <div class="col-sm-5">
-                        <textarea class="form-control" id="message" placeholder="Message content..." required> </textarea>
-                        <div class="help-block with-errors"></div>
+                        <textarea class="form-control" id="message" > </textarea>
                     </div>
-                    <!-- col -->
+
                 </div>
-                <!-- form-group -->
 
 
-                <div class="form-group">
+
+                <!-- <div class="form-group">
                     <label for="robot-check" class="control-label col-sm-3">Robot Check : Which is not a means of payment?</label>
                     <div class="col-sm-5">
                         <div class="checkbox">
@@ -224,35 +285,34 @@
                                 <input type="checkbox" id="cash" value="cash" /> Cash
                             </label>
                         </div>
-                        <!-- checkbox -->
+
 
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" id="visa" value="visa" /> Visa
                             </label>
                         </div>
-                        <!-- checkbox -->
+
 
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" id="youtube" value="youtube" /> Uzcard
                             </label>
                         </div>
-                        <!-- checkbox -->
 
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" id="paypal" value="paypal" /> Click
                             </label>
                         </div>
-                        <!-- checkbox -->
+
                     </div>
-                    <!-- col -->
-                </div>
+
+                </div> -->
                 <!-- form-group -->
 
-                <div class="col-lg-6 center-block">
-                    <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">
+                <div class="center-block">
+                    <button id="formbutton" name="formbutton" class="btn btn-primary center-block">
                         Send Message
                     </button>
                 </div>
@@ -278,12 +338,14 @@
         <div class="container">
             <!-- <p class="text-muted">Place sticky footer content here.</p> -->
             <div class="social-media">
-                <a href="#"><span>Facebook</span></a>
-                <a href="#"><span>Twitter</span></a>
+                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x animated infinite jello"></i></span></a>
+                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x animated infinite wobble"></i></span></a>
+                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x animated infinite jello"></i></span></a>
+                <!-- <a href="#"><span>Twitter</span></a>
                 <a href="#"><span>Google+</span></a>
                 <a href="#"><span>Github</span></a>
                 <a href="#"><span>Dribbble</span></a>
-                <a href="#"><span>CodePen</span></a>
+                <a href="#"><span>CodePen</span></a> -->
             </div>
         </div>
     </footer>
@@ -295,7 +357,6 @@
     <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>

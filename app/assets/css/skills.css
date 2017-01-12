@@ -137,7 +137,7 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 85%;
   }
 }
 @-webkit-keyframes progress-php {
@@ -145,7 +145,7 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 70%;
   }
 }
 @-webkit-keyframes progress-angular {
@@ -153,7 +153,7 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 70%;
   }
 }
 @-moz-keyframes progress-html {
@@ -177,7 +177,7 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 85%;
   }
 }
 @-moz-keyframes progress-php {
@@ -185,7 +185,7 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 70%;
   }
 }
 @-moz-keyframes progress-angular {
@@ -193,7 +193,7 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 70%;
   }
 }
 @keyframes progress-html {
@@ -217,7 +217,7 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 85%;
   }
 }
 @keyframes progress-php {
@@ -225,7 +225,7 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 55%;
+    width: 70%;
   }
 }
 @keyframes progress-angular {
@@ -233,6 +233,6 @@ ul.skills-bar-container{
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 70%;
   }
 }
