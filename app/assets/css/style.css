@@ -5,11 +5,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /*max-height: 300px;*/
   }
 
+.logo{
+  font-family: 'Sigmar One', cursive;
+}
   .bio-message{
     text-align: center;
+    font-family: Merriweather Sans;
   }
 
 .img-circle{
@@ -17,6 +20,12 @@
 }
 
 
+/*Abel, Noto+Serif*/
+
+figcaption{
+  /*font-family: 'Noto+Serif', cursive;*/
+  font-family: 'Pompiere', cursive;
+}
 .social-media {
   display: inline-block;
   position:absolute;
@@ -30,6 +39,20 @@
 
 .no-bullet{
   list-style-type: none;
+
+}
+
+
+img.img-responsive{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header{
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  margin-bottom: 50px;
 
 }
 
