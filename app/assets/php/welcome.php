@@ -79,7 +79,7 @@ if(isset($_POST['email'])) {
 
   if(strlen($message) < 2) {
 
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    $error_message .= 'The Message you entered does not appear to be valid.<br />';
 
   }
 
@@ -137,5 +137,5 @@ mail($email_to, $email_subject, $email_message);
 
 <div style="font-family:'Comic Sans MS', cursive, sans-serif;">
 
-  Thank you for contacting me. I will be in touch very soon. Click to go <a href="../../index.html">back to Home page.</a>
+  Thank you for contacting me. I will be in touch very soon. Click to go <a href="../../index.html">back to the Home page.</a>
 </div>
