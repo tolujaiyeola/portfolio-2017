@@ -6,9 +6,9 @@ if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
 
-    $email_to = "you@yourdomain.com";
+    $email_to = "tolutwinkles@gmail.com";
 
-    $email_subject = "Your email subject line";
+    $email_subject = "Email from tolu-jaiyeola.com";
 
 
 
@@ -16,7 +16,7 @@ if(isset($_POST['email'])) {
 
     function died($error) {
 
-        // your error code can go here
+        // error code can go here
 
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
 
@@ -34,39 +34,35 @@ if(isset($_POST['email'])) {
 
     // validation expected data exists
 
-    if(!isset($_POST['first_name']) ||
-
-        !isset($_POST['last_name']) ||
+    if(!isset($_POST['name']) ||
 
         !isset($_POST['email']) ||
 
-        !isset($_POST['telephone']) ||
+        !isset($_POST['phone_number']) ||
 
-        !isset($_POST['comments'])) {
+        !isset($_POST['message']) )
 
         died('We are sorry, but there appears to be a problem with the form you submitted.');
+
+
 
     }
 
 
 
-    $first_name = $_POST['first_name']; // required
+    $user = $_POST['name']; // required
 
-    $last_name = $_POST['last_name']; // required
+    $email = $_POST['email']; // required
 
-    $email_from = $_POST['email']; // required
+    $phone_number = $_POST['phone_number']; // required
 
-    $telephone = $_POST['telephone']; // not required
-
-    $comments = $_POST['comments']; // required
-
-
+    $message= $_POST['message']; // not required
 
     $error_message = "";
 
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-  if(!preg_match($email_exp,$email_from)) {
+  if(!preg_match($email_exp,$email)) {
 
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
 
@@ -74,19 +70,14 @@ if(isset($_POST['email'])) {
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-  if(!preg_match($string_exp,$first_name)) {
+  if(!preg_match($string_exp,$user)) {
 
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-
-  }
-
-  if(!preg_match($string_exp,$last_name)) {
-
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+    $error_message .= 'The Name you entered does not appear to be valid.<br />';
 
   }
 
-  if(strlen($comments) < 2) {
+
+  if(strlen($message) < 2) {
 
     $error_message .= 'The Comments you entered do not appear to be valid.<br />';
 
@@ -112,15 +103,13 @@ if(isset($_POST['email'])) {
 
 
 
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
+    $email_message .= "Name: ".clean_string($name)."\n";
 
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
+    $email_message .= "Email: ".clean_string($email)."\n";
 
-    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Telephone: ".clean_string($phone_number)."\n";
 
-    $email_message .= "Telephone: ".clean_string($telephone)."\n";
-
-    $email_message .= "Comments: ".clean_string($comments)."\n";
+    $email_message .= "Comments: ".clean_string($message)."\n";
 
 
 
@@ -128,9 +117,9 @@ if(isset($_POST['email'])) {
 
 // create email headers
 
-$headers = 'From: '.$email_from."\r\n".
+$headers = 'From: '.$email."\r\n".
 
-'Reply-To: '.$email_from."\r\n" .
+'Reply-To: '.$email."\r\n" .
 
 'X-Mailer: PHP/' . phpversion();
 
@@ -145,11 +134,3 @@ $headers = 'From: '.$email_from."\r\n".
 
 
 Thank you for contacting us. We will be in touch with you very soon.
-
-
-
-<?php
-
-// phpinfo();
-
-?>

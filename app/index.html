@@ -8,9 +8,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- fix this when you get the image -->
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
-
     <title>Tolu Jaiyeola | Web Developer Portfolio</title>
     <link rel="icon" type="image/png" href="assets/images/tolu-photo.jpg">
 
@@ -61,7 +58,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand logo" href="#">Tolu Jaiyeola</a>
+                <a class="navbar-brand logo" href="index.html">Tolu Jaiyeola</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -69,18 +66,6 @@
                     <li id="skills"><a href="#skills">Skills</a></li>
                     <li id="work"><a href="#work">Work</a></li>
                     <li id="contact"><a href="#contact">Contact</a></li>
-                    <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li> -->
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -96,18 +81,6 @@
       	<img src="assets/images/art-boy-birds-sky-clouds.jpg" class="img-responsive header-image">
          </div>
       </div>
-
-
-
-
-
-        <!-- <header id="homeDiv">
-            <div class="jumbotron">
-                <img class="header-image" src="assets/images/art-boy-birds-sky-clouds.jpg" alt="">
-
-
-            </div>
-        </header> -->
 
         <div class="jumbotron">
 
@@ -228,36 +201,15 @@
         </div>
 
 
-
-
-
-        <div class="jumbotron">
-            <!-- <figure class="imghvr-stack-up">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/example-custom.jpg" alt="example-image">
-            <figcaption>
-              <h3 class="ih-fade-down ih-delay-sm ">Oscar Wilde</h3>
-              <p class="ih-zoom-in ih-delay-md">
-                <i>"I have the simplest tastes, I am always satisfied with the best."</i>
-              </p>
-              <a class="ih-fade-up ih-delay-lg button" href="#">Read More</a>
-            </figcaption>
-            <a href="#"></a>
-          </figure> -->
-
-
-        </div>
-
-
-
         <div id="contactDiv" class="jumbotron">
 
             <h1 class="section-header">Contact Me</h1>
-            <form class="form-horizontal">
+            <form class="form-horizontal" name="contactform" method="post" action="assets/php/welcome.php">
 
                 <div class="form-group">
                     <label for="name" class="col-sm-3 control-label"> <span class="glyphicon glyphicon-user"></span></label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" id="name" placeholder="Lisa Doe" required/>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Lisa Doe" required/>
                     </div>
                     <!-- col -->
                 </div>
@@ -266,63 +218,25 @@
                 <div class="form-group">
                     <label for="email" class="control-label col-sm-3"><span class="glyphicon glyphicon-envelope"></label>
                     <div class="col-sm-5">
-                        <input type="email" id="email" class="form-control" placeholder="lisa.doe@gmail.com"required/>
+                        <input name="email" type="email" id="email" class="form-control" placeholder="lisa.doe@gmail.com"required/>
                     </div>
                 </div>
-
 
                 <div class="form-group">
                     <label for="phone" class="col-sm-3 control-label"> <span class="glyphicon glyphicon-phone"></span></label>
                     <div class="col-sm-5 phoneArea">
-                        <input type="tel" id="phone1" class="form-control" placeholder="Тelephone" />
+                        <input name="phone_number" type="tel" id="phone1" class="form-control" placeholder="Тelephone" />
                     </div>
 
                 </div>
-
 
                 <div class="form-group">
                     <label for="message" class="col-sm-3 control-label"><span class="glyphicon glyphicon-comment"></span></label>
                     <div class="col-sm-5">
-                        <textarea class="form-control" id="message" > </textarea>
+                        <textarea name="message" class="form-control" id="message" > </textarea>
                     </div>
 
                 </div>
-
-
-
-                <!-- <div class="form-group">
-                    <label for="robot-check" class="control-label col-sm-3">Robot Check : Which is not a means of payment?</label>
-                    <div class="col-sm-5">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" id="cash" value="cash" /> Cash
-                            </label>
-                        </div>
-
-
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" id="visa" value="visa" /> Visa
-                            </label>
-                        </div>
-
-
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" id="youtube" value="youtube" /> Uzcard
-                            </label>
-                        </div>
-
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" id="paypal" value="paypal" /> Click
-                            </label>
-                        </div>
-
-                    </div>
-
-                </div> -->
-                <!-- form-group -->
 
                 <div class="center-block">
                     <button id="formbutton" name="formbutton" class="btn btn-primary center-block">
@@ -331,16 +245,7 @@
                 </div>
 
 
-
-
-
-
             </form>
-
-
-
-
-
 
         </div>
 
@@ -355,11 +260,6 @@
                 <a href="https://twitter.com/tolujaiyeola"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x animated infinite wobble"></i></span></a>
                 <a href="https://tolujaiyeola.tumblr.com/"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-tumblr fa-stack-1x animated infinite wobble"></i></span></a>
                 <a href="https://ca.linkedin.com/in/tolujaiyeola"><span class="fa-stack fa-lg"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x animated infinite jello"></i></span></a>
-                <!-- <a href="#"><span>Twitter</span></a>
-                <a href="#"><span>Google+</span></a>
-                <a href="#"><span>Github</span></a>
-                <a href="#"><span>Dribbble</span></a>
-                <a href="#"><span>CodePen</span></a> -->
             </div>
         </div>
     </footer>
