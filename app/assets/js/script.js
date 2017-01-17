@@ -27,6 +27,12 @@ $("#home").click(function() {
     }, 2000);
 });
 
+$("#skills").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#skillsDiv").offset().top
+    }, 2000);
+});
+
 // $("#home").hover(function() {
 //   $(this).addClass('animated bounce');
 // });
