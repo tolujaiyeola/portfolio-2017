@@ -1,3 +1,5 @@
+
+
 <?php
 
 if(isset($_POST['email'])) {
@@ -6,25 +8,23 @@ if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
 
-    $email_to = "tolutwinkles@gmail.com";
+    $email_to = "tolujaiye@gmail.com";
 
     $email_subject = "Email from tolu-jaiyeola.com";
-
-
-
 
 
     function died($error) {
 
         // error code can go here
-
+        echo "<a href=\"../../index.html\">Click to go back to website.</a>";
+        echo "<div style=\"color:red;font-family:'Comic Sans MS', cursive, sans-serif;\">";
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
 
         echo "These errors appear below.<br /><br />";
 
         echo $error."<br /><br />";
 
-        echo "Please go back and fix these errors.<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />"."</div>";
 
         die();
 
@@ -103,13 +103,13 @@ if(isset($_POST['email'])) {
 
 
 
-    $email_message .= "Name: ".clean_string($name)."\n";
+    $email_message .= "Name: ".clean_string($user)."\n";
 
     $email_message .= "Email: ".clean_string($email)."\n";
 
     $email_message .= "Telephone: ".clean_string($phone_number)."\n";
 
-    $email_message .= "Comments: ".clean_string($message)."\n";
+    $email_message .= "Message: ".clean_string($message)."\n";
 
 
 
@@ -123,7 +123,10 @@ $headers = 'From: '.$email."\r\n".
 
 'X-Mailer: PHP/' . phpversion();
 
-@mail($email_to, $email_subject, $email_message, $headers);
+// mail($email_to, $email_subject, $email_message, $headers);
+mail($email_to, $email_subject, $email_message);
+
+
 
 ?>
 
@@ -132,5 +135,7 @@ $headers = 'From: '.$email."\r\n".
 <!-- include your own success html here -->
 
 
+<div style="font-family:'Comic Sans MS', cursive, sans-serif;">
 
-Thank you for contacting us. We will be in touch with you very soon.
+  Thank you for contacting me. I will be in touch very soon. Click to go <a href="../../index.html">back to Home page.</a>
+</div>
